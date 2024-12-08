@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+ <head>
+ <script type="text/javascript">
+ function show_prompt()
+ {
+ var name=prompt("Napisz imie","Imie Nazwisko");
+ if (name!=null && name!="")
+ {
+ document.write("Witaj " + name + "! jak sie masz?");
+ }
+ }
+ </script>
+</head>
+<body>
+<b>Zastosowanie:</b>
+Jest uzywany kiedy uzytkownik ma wpisac coc np. zanim wejdzie w dany modul strony. Np. haslo.<br>
+Uzytkownik po wpisaniu wartosc moze nacisnal OK. albo Cancel Jezeli uzytkownik kliknie OK.<br>
+metoda zwraca wpisana wartosc, a w przeciwnym wypadku zwraca null.<br>
+ <input type="button" onclick="show_prompt()" value="Pokaz prompt box" />
+ </body>
+</html>

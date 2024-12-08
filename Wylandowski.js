@@ -1,0 +1,2 @@
+document.write("<p><span style='color: fuchsia; font-size: 20px; font-weight: bold;'>ostatnia modyfikacja strony</span></p>");
+document.write("<p><span style='color: green; font-size: 18px;'>02/03/2014 09:17:42</span></p>");
