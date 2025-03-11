@@ -1,0 +1,36 @@
+<html>
+ <head>
+ <script type="text/javascript">
+    
+    function okno_zamknij() { window.close()  } 
+
+var wiezowiec = {
+ile pieter: '13',
+rok budowy: '2023',
+kolor: 'czarny',
+pokaz: function ()
+{
+document.write( 'ile pieter: ' + this.ile_pieter + '<br>')
+document.write( 'rok budowy: ' + this.rok_budowy + '<br>')
+document.write( 'kolor: ' + this.kolor + '<br>')
+}
+}
+
+wiezowiec.pokaz();
+</script>
+
+</head>
+<body>
+<br>
+Programowanie obiektowe. <br>
+Obiekt to wiezowiec<br>
+Pola:<br>
+ile pieter<br>
+rok budowy<br>
+kolor<br>
+metoda: pokaz<br>
+<br>
+<input type="button" value="zamknij okno" onclick="okno_zamknij()"/> 
+
+</body>
+</html>

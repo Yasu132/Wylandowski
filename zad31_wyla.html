@@ -1,0 +1,56 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function okno_zamknij() {
+            window.close();
+        }
+
+        var wiezowiec = {
+            ile_pieter: '73',
+            rok_budowy: '2001',
+            kolor: 'czarny',
+            pokaz: function () {
+                document.body.innerHTML =
+                    '<h2>Obiekt: wiezowiec</h2>' +
+                    '<p>Pola:</p>' +
+                    '<p>ile_pieter: ' + this.ile_pieter + '</p>' +
+                    '<p>rok_budowy: ' + this.rok_budowy + '</p>' +
+                    '<p>kolor: ' + this.kolor + '</p>' +
+                    '<button onclick="wrocNaGlowna()">Wroc na glowna</button>';
+            }
+        };
+
+        wiezowiec.cena = '2.500.000 PLN';
+        wiezowiec.wiezowiec_pokaz_wylandowski = function () {
+            document.body.innerHTML =
+                '<h2>Nowe Pole</h2>' +
+                '<p>Nowa wlasciwosc: cena = ' + this.cena + '</p>' +
+                '<button onclick="wrocNaGlowna()">Wroc na glowna</button>';
+        };
+
+        function wrocNaGlowna() {
+            location.reload();
+        }
+    </script>
+</head>
+<body>
+    <br>
+    <h2>Programowanie obiektowe</h2>
+    <p>Obiekt to wiezowiec</p>
+    <p>Pola:</p>
+    <ul>
+        <li>ile_pieter</li>
+        <li>rok_budowy</li>
+        <li>kolor</li>
+    </ul>
+    <p>Metoda: pokaz</p>
+    <p>Nowe pole: cena</p>
+    <p>Nowa metoda: wiezowiec_pokaz_wylandowski()</p>
+    <br>
+    <button onclick="wiezowiec.pokaz();">Pokaz obiekt</button>
+    <button onclick="wiezowiec.wiezowiec_pokaz_wylandowski();">Pokaz nowe pole</button>
+    <br><br>
+    <button onclick="okno_zamknij()">Zamknij okno</button>
+    <br><br>
+</body>
+</html>
